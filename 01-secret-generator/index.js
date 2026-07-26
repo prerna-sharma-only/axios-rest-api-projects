@@ -9,13 +9,15 @@ app.get("/",async (req,res)=>{
     try{
         const response = await axios.get("https://secrets-api.appbrewery.com/random");
         const result = response.data;
+        console.log(result);
         res.render("index.ejs",{
             secret : result.secret,
             user : result.username
         });
     }catch (error) {
-        console.log(error.response.data);
-        res.status(500).send("Something went wrong!");
+        console.log(error.message);
+        console.log(error.response?.data);
+        res.status(500).send(error.message);
     }
 });
 
