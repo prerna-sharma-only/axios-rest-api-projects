@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/EJS-B4CA65?style=for-the-badge">
 </p>
 
-## Current Project
+## Current Projects
 
 ### 01. Secret Generator
 
@@ -26,6 +26,22 @@ A simple Express.js application that fetches a random secret from a public REST 
 - API response handling
 - Dynamic rendering
 
+---    
+
+### 02. API Authentication
+
+Demonstrates different ways of authenticating REST API requests using Axios.
+
+**Concepts Covered**
+
+- No Authentication
+- Basic Authentication
+- API Key Authentication
+- Bearer Token Authentication
+- Query Parameters
+- Request Headers
+- Axios Configuration
+
 ## Tech Stack
 
 - Node.js
@@ -33,7 +49,9 @@ A simple Express.js application that fetches a random secret from a public REST 
 - Axios
 - EJS
 - HTML
-- CSS
+- CSS   
+
+---
 
 ## Repository Structure
 
@@ -41,6 +59,17 @@ A simple Express.js application that fetches a random secret from a public REST 
 axios-rest-api-projects/
 │
 ├── 01-secret-generator/
+│   ├── public/
+│   ├── views/
+│   ├── index.js
+│   └── package.json
+│
+├── 02-api-authentication/
+│   ├── views/
+│   ├── index.js
+│   └── package.json
+│
+├── .gitignore
 └── README.md
 ```
 
